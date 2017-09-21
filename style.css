@@ -1,0 +1,158 @@
+/*Used to import Raleway font from google*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*formats the background and text colors for the site*/
+html {
+    background-color: #e8e8e8;
+    color: #3a3a3a;
+}
+
+/*formats the "igme 230" header to be the right font, and provides a border*/
+h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 74px;
+    /*border: 5px solid #3a3a3a;
+    border-radius: 10px;*/
+    border-bottom: 5px solid #3a3a3a;
+    width: 900px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/*positions the section with my face on the right side of the screen and formats the font used for my name*/
+#nate_info {
+    float: right;
+    border: 5px solid #3a3a3a;
+    border-radius: 10px;
+    width: 25%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: #e8e8e8;
+    padding: 20px;
+    background: rgba(232, 232, 232, 0.95);
+}
+
+
+/*the following 4 blocks of code control the images of myself - hovering over the picture will change it to pixel Nate*/
+#nate_image {
+    width: 100%;
+    margin-top: -20px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.pictures {
+    background: rgba(232, 232, 232, 1);
+}
+.pictures #hover_pic {
+    display: none;
+    width: 100%;
+    margin-top: -20px;
+    border-radius: 10px;
+}
+
+.pictures:hover #hover_pic {
+    display: inline;
+}
+
+.pictures:hover #nate_image {
+    display: none;
+}
+
+/*the following 3 blocks of code fix the font and alignment of the navigation section, and removes bullets from list*/
+nav {
+    width: 25%;
+    padding: 20px;
+    border: 5px solid #3a3a3a;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    background-color: #e8e8e8;
+    background: rgba(232, 232, 232, 0.95);
+}
+
+nav h2 {
+    text-align: center;
+}
+
+nav ul {
+    display: inline;
+    text-align: left;
+    list-style: none;
+}
+
+/*following 3 blocks edit the appearance of the exercise and project links*/
+a {
+    text-decoration: none;
+    border-bottom: 1px dashed #3a3a3a;
+    color: #3a3a3a;
+}
+
+a:hover {
+    color: #000000;
+    background-color: #FFEA63;
+    border-radius: 5px;
+}
+
+li {
+    line-height: 1.5;
+}
+
+/*formats "what is igme 230" section, placing it in the center of the screen and fixing the font*/
+#about {
+    border: 5px solid #3a3a3a;
+    border-radius: 10px;
+    display: inline-block;
+    width: 25%;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    /*left: 38.5%;*/
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    background-color: #e8e8e8;
+    opacity: .95;
+}
+
+/*following 3 blocks create the tooltip/popup text when hovering over a exercise or project*/
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltext {
+    visibility: hidden;
+    width: 150px;
+    background: rgb(128, 128, 128);
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 20px;
+    padding: 5px;
+    z-index: 99;
+}
+
+.tooltip:hover .tooltext {
+    visibility: visible;
+}
+
+/*creates RIT tiger watermark at the center of the screen*/
+#ritlogo {
+    width: 1000px;
+    position: absolute;
+    opacity: .75;
+    z-index: -1;
+    top: 40%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
